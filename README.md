@@ -19,3 +19,6 @@ users_controller.rb       -> UsersController class
 -
 Start the server
 Migrations - files that we use to create or update database
+
+-create a help page using the formula we have used so far
+-paste an image of the help page
