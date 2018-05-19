@@ -3,6 +3,7 @@ class InvitadosController < ApplicationController
 
   # GET /invitados
   # GET /invitados.json
+  
   def index
     @invitados = Invitado.all
   end
