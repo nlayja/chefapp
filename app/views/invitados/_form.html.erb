@@ -1,0 +1,37 @@
+<%= form_with(model: invitado, local: true) do |form| %>
+  <% if invitado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(invitado.errors.count, "error") %> prohibited this invitado from being saved:</h2>
+
+      <ul>
+      <% invitado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :chef_id %>
+    <%= form.number_field :chef_id, id: :invitado_chef_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :invitado_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class %>
+    <%= form.text_field :class, id: :invitado_class %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :invitado_email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

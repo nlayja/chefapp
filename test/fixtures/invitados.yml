@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chef_id: 1
+  name: MyString
+  class: MyString
+  email: MyString
+
+two:
+  chef_id: 1
+  name: MyString
+  class: MyString
+  email: MyString

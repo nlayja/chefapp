@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Chef:</strong>
+  <%= @invitado.chef_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @invitado.name %>
+</p>
+
+<p>
+  <strong>Class:</strong>
+  <%= @invitado.class %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @invitado.email %>
+</p>
+
+<%= link_to 'Edit', edit_invitado_path(@invitado) %> |
+<%= link_to 'Back', invitados_path %>
